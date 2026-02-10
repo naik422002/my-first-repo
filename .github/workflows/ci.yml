@@ -1,3 +1,4 @@
+
 name: First CI Pipeline
 
 on:
@@ -15,6 +16,6 @@ jobs:
 
       - name: Run basic commands
         run: |
-          echo "CI pipeline is running 🚀"
-          ls
+          echo "breaking the pipeline purposefully 🚀"
+          lss
           pwd
