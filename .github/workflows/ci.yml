@@ -16,6 +16,6 @@ jobs:
 
       - name: Run basic commands
         run: |
-          echo "breaking the pipeline purposefully 🚀"
-          lss
+          echo "ci pipeline fixed 🚀"
+          ls
           pwd
