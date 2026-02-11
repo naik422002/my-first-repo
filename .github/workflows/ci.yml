@@ -23,7 +23,11 @@ jobs:
         run: echo "TAG=v1.0.${{ github.run_number }}" >> $GITHUB_ENV    
 
       - name: Build Docker Image
-        run: docker build -t naik422002/my-first-repo:${{ env.TAG }} .
+        run: |
+          docker build -t naik422002/my-first-repo:${{ env.TAG }} .
+          docker tag naik422002/my-first-repo:${{ env.TAG }} naik422002/my-first-repo:latest
         
-      - name: Push Docker Image
-        run: docker push naik422002/my-first-repo:${{ env.TAG }}
+     - name: Push Docker Image
+        run: |
+          docker push naik422002/my-first-repo:${{ env.TAG }}
+          docker push naik422002/my-first-repo:latest
