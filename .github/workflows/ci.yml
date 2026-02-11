@@ -31,3 +31,7 @@ jobs:
         run: |
           docker push naik422002/my-first-repo:${{ env.TAG }}
           docker push naik422002/my-first-repo:latest
+
+      - name: Test Docker Image
+        run: |
+         docker run --rm naik422002/my-first-repo:${{ env.TAG }}    
