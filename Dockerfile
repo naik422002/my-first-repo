@@ -1,4 +1,1 @@
-FROM ubuntu:latest
-
-
-CMD ["echo","hello from ci docker build"]
+RUN echo "version 1.0.8"
