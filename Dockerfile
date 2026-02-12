@@ -8,4 +8,4 @@ LABEL version="1.0.13"
 RUN echo "version 1.0.13"
 
 # Step 4: Default command when container starts
-CMD ["echo", "Hello from my first Docker container!"]
+CMD ["sh","-c","echo Hello from my first Docker container! && sleep infinity"]
